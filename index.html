@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="img/logo.JPG"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -23,20 +24,43 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars"onclick="showMenu()""></i>
         </nav>
 
     <div class="text-box">
         <h1>Welcome!</h1>
-        <p>My name is Conor Gleeson 
-        I have created this as a resource to centralise my work to date. 
-        I am a professional GIS Analyst with a keen interest in spatial data and computer technology. 
-        I also enjoy creaive writing and photography, particularly in the area of Sport.
+        <p>Hello and welcome to my website. <br>My name is Conor and on this site you will find a portfolio of my work to date.</br>
         </p>
-        <a href="">Contact us to know more</a>
-
-
+        <a href="" class="contact-button">Contact me to find out more</a>
 
     </section>
+
+    <!---- Running Tours ------>
+    <section class="Running-Tours">
+        <h1>Laaarge Running Tours</h1>
+        <p> We offer laaarge running tours for laaarge men.</p>
+    
+
+    </section>
+
+
+
+
+    <!----- Javascript for Toggle Menu -----> 
+    
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-220px";
+        }
+
+    </script>
         
 </body>
 
